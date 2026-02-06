@@ -1,16 +1,73 @@
-# React + Vite
+# Sutradhar AI (Hackathon MVP)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Sutradhar AI** is a "Context-Aware Transcreation" engine designed for Bharat. Unlike standard translation tools, it adapts content culturally (e.g., changing "Baseball" analogies to "Cricket") to make global information relevant to local users.
 
-Currently, two official plugins are available:
+This project is a Web Application built with **React**, **Vite**, and **Tailwind CSS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 How to Run This Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Follow these steps to set up and run the application on your local machine.
 
-## Expanding the ESLint configuration
+### 1. Prerequisites (What to Download)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Before you begin, you need to have **Node.js** installed.
+
+*   **Download Node.js:** Go to [nodejs.org](https://nodejs.org/) and download the **LTS (Long Term Support)** version for your operating system (Windows, macOS, or Linux).
+*   **Verify Installation:** Open your terminal (Command Prompt or PowerShell on Windows, Terminal on Mac) and type:
+    ```bash
+    node -v
+    npm -v
+    ```
+    If you see version numbers (e.g., `v20.x.x`), you are ready.
+
+### 2. Installation (Setting up the Project)
+
+Open your terminal and navigate to the project folder (`sutradhar-ai`). Then, install the necessary code libraries (dependencies).
+
+```bash
+cd sutradhar-ai
+npm install
+```
+
+*   **What this does:** It reads the `package.json` file and downloads all the tools (React, Tailwind, Lucide Icons, etc.) required to run the app into a `node_modules` folder.
+
+### 3. Running the App (Start the Server)
+
+Now, start the local development server to see the app in action.
+
+```bash
+npm run dev
+```
+
+*   **What this does:** It starts a local web server using Vite.
+*   **Access the App:** Look at the terminal output. It will show a URL, usually:
+    > **http://localhost:5173**
+
+    Open this link in your web browser (Chrome, Edge, Firefox, etc.).
+
+---
+
+## 🛠 Project Overview
+
+*   **Frontend Framework:** [React](https://react.dev/) (Builds the user interface).
+*   **Build Tool:** [Vite](https://vitejs.dev/) (Makes the app run fast locally).
+*   **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) (Used for modern, responsive design).
+*   **Icons:** [Lucide React](https://lucide.dev/) (Provides the icons used in the UI).
+*   **Testing:** [Vitest](https://vitest.dev/) (Ensures the data logic is correct).
+
+### Key Features in MVP
+1.  **Scenario Selector:** Choose between Sports, Finance, and Pop Culture demos.
+2.  **Transcreation Engine:** Simulates the AI process of "Reading -> Thinking -> Adapting".
+3.  **Insight Cards:** Displays *why* a specific change was made (e.g., "Cultural Equivalence").
+
+---
+
+## ✅ Running Tests (Optional)
+
+If you want to verify that the code logic is working correctly, you can run the test suite:
+
+```bash
+npm run test
+```
